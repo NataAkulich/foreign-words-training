@@ -1,11 +1,10 @@
 const newFlipcard = document.querySelector('.flip-card');
 newFlipcard.classList.add('active');
 
-const container = document.querySelector('#card-front');
-const textCardfront = document.createElement('p');
-textCardfront.textContent = 'sun';
-container.prepend(textCardfront);
 
+
+const container = document.querySelector('#card-front');
+container.textContent = 'sun';
 
 
 const cards = document.querySelector('.flip-card');
@@ -15,8 +14,12 @@ function upendCard() {
 }
 cards.addEventListener('click', upendCard);
 
+const containerOne = document.querySelector('#card-back');
+containerOne.textContent = 'солнце';
 
-const container = document.querySelector('#card-back');
-const textCardback = document.createElement('p');
-textCardback.textContent = 'солнце';
-container.prepend(textCardback);
+
+
+
+
+const sliderLine = document.querySelector('.slider-controls');
+document.querySelector('.slider-controls').addEventListener(click, function() {})
